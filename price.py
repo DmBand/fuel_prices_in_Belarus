@@ -16,7 +16,7 @@ def get_price(url):
     with open('price.txt', 'a', encoding='UTF-8') as file:
         file.write(f'\n{datetime.datetime.now().strftime("%d.%m.%Y %H:%M:%S")}\n{"=" * 20}\n')
         for n, p in zip(name, current_price):
-            file.write(f'{n.text}: {p}руб.\n')
+            file.write(f'{n.text}: {p} руб.\n')
 
 
 def main():
